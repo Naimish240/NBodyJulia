@@ -52,12 +52,12 @@ function main(N, tEnd, dt, G, show=false, save=false)
 		y = pos[:, 2]
 
 		if show == true
-			display(scatter(x, y, xlims=(-5, 5), ylims=(-5,5)))
+			display(scatter(x, y, xlims=(-2.5, 2.5), ylims=(-2,2)))
 		end
 		if save == true
-			savefig(scatter(x, y, xlims=(-5, 5), ylims=(-5,5)), "frames/$i.png")
+			savefig(scatter(x, y, xlims=(-2.5, 2.5), ylims=(-2,2)), "frames/$i.png")
 		end
 	end
 end
 
-main(25, 1, 0.01, 1, true, true)
+main(25, 0.5, 0.01, 1, true, true)
